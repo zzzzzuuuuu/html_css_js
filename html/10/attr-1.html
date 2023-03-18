@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>속성 선택자 [속성]</title>
+  <style>
+    ul { list-style: none; }
+    li { width: 120px; display: inline-block; margin: 10px; }
+    li a { padding: 5px 20px; font-size: 14px; text-decoration: none; font-weight: bold; } /* 상위요소 하위요소: li 요소의 a요소에 모두 적용함. */
+    a[href] { background: yellow; border: 1px solid #ccc; font-weight: normal; } /* href 속성이 있는 a 요소를 찾는 선택자 */
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a>메인메뉴: </a></li>
+    <li><a href="#">메뉴 1</a></li> <!-- a 요소 중에서 href 속성값이 있는 요소만 적용 -->
+    <li><a href="#">메뉴 2</a></li>
+    <li><a href="#">메뉴 3</a></li>
+    <li><a href="#">메뉴 4</a></li>
+  </ul>
+</body>
+</html>

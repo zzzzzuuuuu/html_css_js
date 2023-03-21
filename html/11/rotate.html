@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Transform:rotate - 요소 회전</title>
+  <style>
+    #container { width: 800px; margin: 20px auto; }
+    .origin { width: 100px; height: 100px; float: left; margin: 40px; }
+    #rotate1:hover { transform: rotate(40deg); } /*시계 방향으로 40도 회전 */
+    #rotate2:hover { transform: rotate(-40deg); } /*반시계 회전*/
+</style>
+</head>
+<body>
+  <div id="container">
+    <div class="origin" id="rotate1">
+      <img src="images/tree.jpg">
+    </div>
+  </div>
+  <div class="origin" id="rotate2">
+    <img src="images/tree.jpg">
+  </div>
+</body>
+</html>

@@ -20,3 +20,8 @@ body {
 img {
   max-width:100%;
 }
+#wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmiax(320px, 1fr));
+  grid-gap: 1rem;
+}
